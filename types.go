@@ -560,7 +560,7 @@ type TaskResult uint32
 
 const (
 	SCHED_S_SUCCESS    TaskResult = 0x0
-	SCHED_S_TASK_READY TaskResult = iota + 0x00041300
+	SCHED_S_TASK_READY TaskResult = (iota - 1) + 0x00041300
 	SCHED_S_TASK_RUNNING
 	SCHED_S_TASK_DISABLED
 	SCHED_S_TASK_HAS_NOT_RUN
